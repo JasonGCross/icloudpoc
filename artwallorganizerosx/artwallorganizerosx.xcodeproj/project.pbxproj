@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6258EF315CA66910096B725 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6258EEC15CA66910096B725 /* Photo.m */; };
+		F6258EF515CA66910096B725 /* Sub_Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6258EF015CA66910096B725 /* Sub_Photo.m */; };
+		F6E4000015CA65D4006A4552 /* awoPhotoArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FFFF15CA65D4006A4552 /* awoPhotoArrayController.m */; };
+		F6E4FFC515C9FEC7006A4552 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E4FFC415C9FEC7006A4552 /* Cocoa.framework */; };
+		F6E4FFCF15C9FEC7006A4552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E4FFCD15C9FEC7006A4552 /* InfoPlist.strings */; };
+		F6E4FFD115C9FEC7006A4552 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FFD015C9FEC7006A4552 /* main.m */; };
+		F6E4FFD515C9FEC7006A4552 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6E4FFD315C9FEC7006A4552 /* Credits.rtf */; };
+		F6E4FFD815C9FEC7006A4552 /* awoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FFD715C9FEC7006A4552 /* awoAppDelegate.m */; };
+		F6E4FFDB15C9FEC7006A4552 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E4FFD915C9FEC7006A4552 /* MainMenu.xib */; };
+		F6E4FFDE15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FFDC15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodeld */; };
+		F6E4FFE615C9FEC8006A4552 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E4FFE515C9FEC8006A4552 /* SenTestingKit.framework */; };
+		F6E4FFE715C9FEC8006A4552 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E4FFC415C9FEC7006A4552 /* Cocoa.framework */; };
+		F6E4FFEF15C9FEC8006A4552 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E4FFED15C9FEC8006A4552 /* InfoPlist.strings */; };
+		F6E4FFF215C9FEC8006A4552 /* artwallorganizerosxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E4FFF115C9FEC8006A4552 /* artwallorganizerosxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6E4FFE815C9FEC8006A4552 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6E4FFB715C9FEC7006A4552 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E4FFBF15C9FEC7006A4552;
+			remoteInfo = artwallorganizerosx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6258EEB15CA66910096B725 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = ../icloud_poc/icloud_poc/Photo.h; sourceTree = "<group>"; };
+		F6258EEC15CA66910096B725 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = ../icloud_poc/icloud_poc/Photo.m; sourceTree = "<group>"; };
+		F6258EEF15CA66910096B725 /* Sub_Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sub_Photo.h; path = ../icloud_poc/icloud_poc/Sub_Photo.h; sourceTree = "<group>"; };
+		F6258EF015CA66910096B725 /* Sub_Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sub_Photo.m; path = ../icloud_poc/icloud_poc/Sub_Photo.m; sourceTree = "<group>"; };
+		F6B0D78615CBB503002F6EBA /* artwallorganizerosx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = artwallorganizerosx.entitlements; sourceTree = "<group>"; };
+		F6E4FFC015C9FEC7006A4552 /* artwallorganizerosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = artwallorganizerosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E4FFC415C9FEC7006A4552 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6E4FFC715C9FEC7006A4552 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6E4FFC815C9FEC7006A4552 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6E4FFC915C9FEC7006A4552 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6E4FFCC15C9FEC7006A4552 /* artwallorganizerosx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "artwallorganizerosx-Info.plist"; sourceTree = "<group>"; };
+		F6E4FFCE15C9FEC7006A4552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6E4FFD015C9FEC7006A4552 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6E4FFD215C9FEC7006A4552 /* artwallorganizerosx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "artwallorganizerosx-Prefix.pch"; sourceTree = "<group>"; };
+		F6E4FFD415C9FEC7006A4552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6E4FFD615C9FEC7006A4552 /* awoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = awoAppDelegate.h; sourceTree = "<group>"; };
+		F6E4FFD715C9FEC7006A4552 /* awoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awoAppDelegate.m; sourceTree = "<group>"; };
+		F6E4FFDA15C9FEC7006A4552 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6E4FFDD15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = artwallorganizerosx.xcdatamodel; sourceTree = "<group>"; };
+		F6E4FFE415C9FEC8006A4552 /* artwallorganizerosxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = artwallorganizerosxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E4FFE515C9FEC8006A4552 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6E4FFEC15C9FEC8006A4552 /* artwallorganizerosxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "artwallorganizerosxTests-Info.plist"; sourceTree = "<group>"; };
+		F6E4FFEE15C9FEC8006A4552 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6E4FFF015C9FEC8006A4552 /* artwallorganizerosxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = artwallorganizerosxTests.h; sourceTree = "<group>"; };
+		F6E4FFF115C9FEC8006A4552 /* artwallorganizerosxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = artwallorganizerosxTests.m; sourceTree = "<group>"; };
+		F6E4FFFE15CA65D4006A4552 /* awoPhotoArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = awoPhotoArrayController.h; sourceTree = "<group>"; };
+		F6E4FFFF15CA65D4006A4552 /* awoPhotoArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = awoPhotoArrayController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E4FFBD15C9FEC7006A4552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFC515C9FEC7006A4552 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E4FFE015C9FEC8006A4552 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFE615C9FEC8006A4552 /* SenTestingKit.framework in Frameworks */,
+				F6E4FFE715C9FEC8006A4552 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6258EE915CA666A0096B725 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				F6258EEB15CA66910096B725 /* Photo.h */,
+				F6258EEC15CA66910096B725 /* Photo.m */,
+				F6258EEF15CA66910096B725 /* Sub_Photo.h */,
+				F6258EF015CA66910096B725 /* Sub_Photo.m */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		F6E4FFB515C9FEC7006A4552 = {
+			isa = PBXGroup;
+			children = (
+				F6258EE915CA666A0096B725 /* shared */,
+				F6E4FFCA15C9FEC7006A4552 /* artwallorganizerosx */,
+				F6E4FFEA15C9FEC8006A4552 /* artwallorganizerosxTests */,
+				F6E4FFC315C9FEC7006A4552 /* Frameworks */,
+				F6E4FFC115C9FEC7006A4552 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6E4FFC115C9FEC7006A4552 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFC015C9FEC7006A4552 /* artwallorganizerosx.app */,
+				F6E4FFE415C9FEC8006A4552 /* artwallorganizerosxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E4FFC315C9FEC7006A4552 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFC415C9FEC7006A4552 /* Cocoa.framework */,
+				F6E4FFE515C9FEC8006A4552 /* SenTestingKit.framework */,
+				F6E4FFC615C9FEC7006A4552 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E4FFC615C9FEC7006A4552 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFC715C9FEC7006A4552 /* AppKit.framework */,
+				F6E4FFC815C9FEC7006A4552 /* CoreData.framework */,
+				F6E4FFC915C9FEC7006A4552 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6E4FFCA15C9FEC7006A4552 /* artwallorganizerosx */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFD615C9FEC7006A4552 /* awoAppDelegate.h */,
+				F6E4FFD715C9FEC7006A4552 /* awoAppDelegate.m */,
+				F6E4FFFE15CA65D4006A4552 /* awoPhotoArrayController.h */,
+				F6E4FFFF15CA65D4006A4552 /* awoPhotoArrayController.m */,
+				F6E4FFD915C9FEC7006A4552 /* MainMenu.xib */,
+				F6E4FFDC15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodeld */,
+				F6E4FFCB15C9FEC7006A4552 /* Supporting Files */,
+			);
+			path = artwallorganizerosx;
+			sourceTree = "<group>";
+		};
+		F6E4FFCB15C9FEC7006A4552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0D78615CBB503002F6EBA /* artwallorganizerosx.entitlements */,
+				F6E4FFCC15C9FEC7006A4552 /* artwallorganizerosx-Info.plist */,
+				F6E4FFCD15C9FEC7006A4552 /* InfoPlist.strings */,
+				F6E4FFD015C9FEC7006A4552 /* main.m */,
+				F6E4FFD215C9FEC7006A4552 /* artwallorganizerosx-Prefix.pch */,
+				F6E4FFD315C9FEC7006A4552 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E4FFEA15C9FEC8006A4552 /* artwallorganizerosxTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFF015C9FEC8006A4552 /* artwallorganizerosxTests.h */,
+				F6E4FFF115C9FEC8006A4552 /* artwallorganizerosxTests.m */,
+				F6E4FFEB15C9FEC8006A4552 /* Supporting Files */,
+			);
+			path = artwallorganizerosxTests;
+			sourceTree = "<group>";
+		};
+		F6E4FFEB15C9FEC8006A4552 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E4FFEC15C9FEC8006A4552 /* artwallorganizerosxTests-Info.plist */,
+				F6E4FFED15C9FEC8006A4552 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E4FFBF15C9FEC7006A4552 /* artwallorganizerosx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E4FFF515C9FEC8006A4552 /* Build configuration list for PBXNativeTarget "artwallorganizerosx" */;
+			buildPhases = (
+				F6E4FFBC15C9FEC7006A4552 /* Sources */,
+				F6E4FFBD15C9FEC7006A4552 /* Frameworks */,
+				F6E4FFBE15C9FEC7006A4552 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = artwallorganizerosx;
+			productName = artwallorganizerosx;
+			productReference = F6E4FFC015C9FEC7006A4552 /* artwallorganizerosx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6E4FFE315C9FEC8006A4552 /* artwallorganizerosxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E4FFF815C9FEC8006A4552 /* Build configuration list for PBXNativeTarget "artwallorganizerosxTests" */;
+			buildPhases = (
+				F6E4FFDF15C9FEC8006A4552 /* Sources */,
+				F6E4FFE015C9FEC8006A4552 /* Frameworks */,
+				F6E4FFE115C9FEC8006A4552 /* Resources */,
+				F6E4FFE215C9FEC8006A4552 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6E4FFE915C9FEC8006A4552 /* PBXTargetDependency */,
+			);
+			name = artwallorganizerosxTests;
+			productName = artwallorganizerosxTests;
+			productReference = F6E4FFE415C9FEC8006A4552 /* artwallorganizerosxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6E4FFB715C9FEC7006A4552 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = awo;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "JASON CROSS";
+			};
+			buildConfigurationList = F6E4FFBA15C9FEC7006A4552 /* Build configuration list for PBXProject "artwallorganizerosx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6E4FFB515C9FEC7006A4552;
+			productRefGroup = F6E4FFC115C9FEC7006A4552 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E4FFBF15C9FEC7006A4552 /* artwallorganizerosx */,
+				F6E4FFE315C9FEC8006A4552 /* artwallorganizerosxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6E4FFBE15C9FEC7006A4552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFCF15C9FEC7006A4552 /* InfoPlist.strings in Resources */,
+				F6E4FFD515C9FEC7006A4552 /* Credits.rtf in Resources */,
+				F6E4FFDB15C9FEC7006A4552 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E4FFE115C9FEC8006A4552 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFEF15C9FEC8006A4552 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6E4FFE215C9FEC8006A4552 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E4FFBC15C9FEC7006A4552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFD115C9FEC7006A4552 /* main.m in Sources */,
+				F6E4FFD815C9FEC7006A4552 /* awoAppDelegate.m in Sources */,
+				F6E4FFDE15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodeld in Sources */,
+				F6E4000015CA65D4006A4552 /* awoPhotoArrayController.m in Sources */,
+				F6258EF315CA66910096B725 /* Photo.m in Sources */,
+				F6258EF515CA66910096B725 /* Sub_Photo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E4FFDF15C9FEC8006A4552 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E4FFF215C9FEC8006A4552 /* artwallorganizerosxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6E4FFE915C9FEC8006A4552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E4FFBF15C9FEC7006A4552 /* artwallorganizerosx */;
+			targetProxy = F6E4FFE815C9FEC8006A4552 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6E4FFCD15C9FEC7006A4552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E4FFCE15C9FEC7006A4552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6E4FFD315C9FEC7006A4552 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E4FFD415C9FEC7006A4552 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6E4FFD915C9FEC7006A4552 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E4FFDA15C9FEC7006A4552 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F6E4FFED15C9FEC8006A4552 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E4FFEE15C9FEC8006A4552 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6E4FFF315C9FEC8006A4552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6E4FFF415C9FEC8006A4552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6E4FFF615C9FEC8006A4552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = artwallorganizerosx/artwallorganizerosx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Jason CROSS (UXTFF4ENL3)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "artwallorganizerosx/artwallorganizerosx-Prefix.pch";
+				INFOPLIST_FILE = "artwallorganizerosx/artwallorganizerosx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F1921EA7-5221-4047-834D-1C905AE34FF3";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6E4FFF715C9FEC8006A4552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = artwallorganizerosx/artwallorganizerosx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer: Jason CROSS (UXTFF4ENL3)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "artwallorganizerosx/artwallorganizerosx-Prefix.pch";
+				INFOPLIST_FILE = "artwallorganizerosx/artwallorganizerosx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "F1921EA7-5221-4047-834D-1C905AE34FF3";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6E4FFF915C9FEC8006A4552 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/artwallorganizerosx.app/Contents/MacOS/artwallorganizerosx";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "artwallorganizerosx/artwallorganizerosx-Prefix.pch";
+				INFOPLIST_FILE = "artwallorganizerosxTests/artwallorganizerosxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F6E4FFFA15C9FEC8006A4552 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/artwallorganizerosx.app/Contents/MacOS/artwallorganizerosx";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "artwallorganizerosx/artwallorganizerosx-Prefix.pch";
+				INFOPLIST_FILE = "artwallorganizerosxTests/artwallorganizerosxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6E4FFBA15C9FEC7006A4552 /* Build configuration list for PBXProject "artwallorganizerosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E4FFF315C9FEC8006A4552 /* Debug */,
+				F6E4FFF415C9FEC8006A4552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E4FFF515C9FEC8006A4552 /* Build configuration list for PBXNativeTarget "artwallorganizerosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E4FFF615C9FEC8006A4552 /* Debug */,
+				F6E4FFF715C9FEC8006A4552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E4FFF815C9FEC8006A4552 /* Build configuration list for PBXNativeTarget "artwallorganizerosxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E4FFF915C9FEC8006A4552 /* Debug */,
+				F6E4FFFA15C9FEC8006A4552 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6E4FFDC15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6E4FFDD15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodel */,
+			);
+			currentVersion = F6E4FFDD15C9FEC7006A4552 /* artwallorganizerosx.xcdatamodel */;
+			path = artwallorganizerosx.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6E4FFB715C9FEC7006A4552 /* Project object */;
+}

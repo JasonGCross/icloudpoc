@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'icloud_poc_osx' target in the 'icloud_poc_osx' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6B2E47815C90A03002D03DB /* icloud_poc_osx.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = F6B2E47715C90A03002D03DB /* icloud_poc_osx.entitlements */; };
+		F6F5AAC115C5DC2B0012157B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F5AABA15C5DC2B0012157B /* Photo.m */; };
+		F6F5AAC315C5DC2B0012157B /* Sub_Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F5AABE15C5DC2B0012157B /* Sub_Photo.m */; };
+		F6F5AAC715C5E9B80012157B /* awoPhotoArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F5AAC615C5E9B80012157B /* awoPhotoArrayController.m */; };
+		F6FBE4BA15C5A0F40055B864 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FBE4B915C5A0F40055B864 /* Cocoa.framework */; };
+		F6FBE4C415C5A0F40055B864 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FBE4C215C5A0F40055B864 /* InfoPlist.strings */; };
+		F6FBE4C615C5A0F40055B864 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FBE4C515C5A0F40055B864 /* main.m */; };
+		F6FBE4CA15C5A0F40055B864 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6FBE4C815C5A0F40055B864 /* Credits.rtf */; };
+		F6FBE4CD15C5A0F40055B864 /* awoDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FBE4CC15C5A0F40055B864 /* awoDocument.m */; };
+		F6FBE4D015C5A0F40055B864 /* awoDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6FBE4CE15C5A0F40055B864 /* awoDocument.xib */; };
+		F6FBE4D315C5A0F40055B864 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6FBE4D115C5A0F40055B864 /* MainMenu.xib */; };
+		F6FBE4D615C5A0F40055B864 /* awoDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6FBE4D415C5A0F40055B864 /* awoDocument.xcdatamodeld */; };
+		F6FBE4DE15C5A0F40055B864 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FBE4DD15C5A0F40055B864 /* SenTestingKit.framework */; };
+		F6FBE4DF15C5A0F40055B864 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6FBE4B915C5A0F40055B864 /* Cocoa.framework */; };
+		F6FBE4E715C5A0F40055B864 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6FBE4E515C5A0F40055B864 /* InfoPlist.strings */; };
+		F6FBE4EA15C5A0F40055B864 /* icloud_poc_osxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FBE4E915C5A0F40055B864 /* icloud_poc_osxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6FBE4E015C5A0F40055B864 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6FBE4AC15C5A0F40055B864 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6FBE4B415C5A0F40055B864;
+			remoteInfo = icloud_poc_osx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6B2E47715C90A03002D03DB /* icloud_poc_osx.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = icloud_poc_osx.entitlements; sourceTree = "<group>"; };
+		F6F5AAB915C5DC2B0012157B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = ../icloud_poc/icloud_poc/Photo.h; sourceTree = "<group>"; };
+		F6F5AABA15C5DC2B0012157B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = ../icloud_poc/icloud_poc/Photo.m; sourceTree = "<group>"; };
+		F6F5AABD15C5DC2B0012157B /* Sub_Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Sub_Photo.h; path = ../icloud_poc/icloud_poc/Sub_Photo.h; sourceTree = "<group>"; };
+		F6F5AABE15C5DC2B0012157B /* Sub_Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Sub_Photo.m; path = ../icloud_poc/icloud_poc/Sub_Photo.m; sourceTree = "<group>"; };
+		F6F5AAC515C5E9B80012157B /* awoPhotoArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = awoPhotoArrayController.h; sourceTree = "<group>"; };
+		F6F5AAC615C5E9B80012157B /* awoPhotoArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = awoPhotoArrayController.m; sourceTree = "<group>"; };
+		F6FBE4B515C5A0F40055B864 /* artwallorganizerosx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = artwallorganizerosx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6FBE4B915C5A0F40055B864 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6FBE4BC15C5A0F40055B864 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6FBE4BD15C5A0F40055B864 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6FBE4BE15C5A0F40055B864 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6FBE4C115C5A0F40055B864 /* icloud_poc_osx-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "icloud_poc_osx-Info.plist"; sourceTree = "<group>"; };
+		F6FBE4C315C5A0F40055B864 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6FBE4C515C5A0F40055B864 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6FBE4C715C5A0F40055B864 /* icloud_poc_osx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "icloud_poc_osx-Prefix.pch"; sourceTree = "<group>"; };
+		F6FBE4C915C5A0F40055B864 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6FBE4CB15C5A0F40055B864 /* awoDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = awoDocument.h; sourceTree = "<group>"; };
+		F6FBE4CC15C5A0F40055B864 /* awoDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = awoDocument.m; sourceTree = "<group>"; };
+		F6FBE4CF15C5A0F40055B864 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/awoDocument.xib; sourceTree = "<group>"; };
+		F6FBE4D215C5A0F40055B864 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F6FBE4D515C5A0F40055B864 /* awoDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = awoDocument.xcdatamodel; sourceTree = "<group>"; };
+		F6FBE4DC15C5A0F40055B864 /* icloud_poc_osxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = icloud_poc_osxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6FBE4DD15C5A0F40055B864 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6FBE4E415C5A0F40055B864 /* icloud_poc_osxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "icloud_poc_osxTests-Info.plist"; sourceTree = "<group>"; };
+		F6FBE4E615C5A0F40055B864 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6FBE4E815C5A0F40055B864 /* icloud_poc_osxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = icloud_poc_osxTests.h; sourceTree = "<group>"; };
+		F6FBE4E915C5A0F40055B864 /* icloud_poc_osxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = icloud_poc_osxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6FBE4B215C5A0F40055B864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4BA15C5A0F40055B864 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FBE4D815C5A0F40055B864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4DE15C5A0F40055B864 /* SenTestingKit.framework in Frameworks */,
+				F6FBE4DF15C5A0F40055B864 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6F5AAB615C5DBD40012157B /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				F6F5AAB915C5DC2B0012157B /* Photo.h */,
+				F6F5AABA15C5DC2B0012157B /* Photo.m */,
+				F6F5AABD15C5DC2B0012157B /* Sub_Photo.h */,
+				F6F5AABE15C5DC2B0012157B /* Sub_Photo.m */,
+			);
+			name = shared;
+			sourceTree = "<group>";
+		};
+		F6FBE4AA15C5A0F40055B864 = {
+			isa = PBXGroup;
+			children = (
+				F6F5AAB615C5DBD40012157B /* shared */,
+				F6FBE4BF15C5A0F40055B864 /* icloud_poc_osx */,
+				F6FBE4E215C5A0F40055B864 /* icloud_poc_osxTests */,
+				F6FBE4B815C5A0F40055B864 /* Frameworks */,
+				F6FBE4B615C5A0F40055B864 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6FBE4B615C5A0F40055B864 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6FBE4B515C5A0F40055B864 /* artwallorganizerosx.app */,
+				F6FBE4DC15C5A0F40055B864 /* icloud_poc_osxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6FBE4B815C5A0F40055B864 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6FBE4B915C5A0F40055B864 /* Cocoa.framework */,
+				F6FBE4DD15C5A0F40055B864 /* SenTestingKit.framework */,
+				F6FBE4BB15C5A0F40055B864 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6FBE4BB15C5A0F40055B864 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6FBE4BC15C5A0F40055B864 /* AppKit.framework */,
+				F6FBE4BD15C5A0F40055B864 /* CoreData.framework */,
+				F6FBE4BE15C5A0F40055B864 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6FBE4BF15C5A0F40055B864 /* icloud_poc_osx */ = {
+			isa = PBXGroup;
+			children = (
+				F6F5AAC515C5E9B80012157B /* awoPhotoArrayController.h */,
+				F6F5AAC615C5E9B80012157B /* awoPhotoArrayController.m */,
+				F6FBE4CB15C5A0F40055B864 /* awoDocument.h */,
+				F6FBE4CC15C5A0F40055B864 /* awoDocument.m */,
+				F6FBE4CE15C5A0F40055B864 /* awoDocument.xib */,
+				F6FBE4D115C5A0F40055B864 /* MainMenu.xib */,
+				F6FBE4D415C5A0F40055B864 /* awoDocument.xcdatamodeld */,
+				F6FBE4C015C5A0F40055B864 /* Supporting Files */,
+			);
+			path = icloud_poc_osx;
+			sourceTree = "<group>";
+		};
+		F6FBE4C015C5A0F40055B864 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6B2E47715C90A03002D03DB /* icloud_poc_osx.entitlements */,
+				F6FBE4C115C5A0F40055B864 /* icloud_poc_osx-Info.plist */,
+				F6FBE4C215C5A0F40055B864 /* InfoPlist.strings */,
+				F6FBE4C515C5A0F40055B864 /* main.m */,
+				F6FBE4C715C5A0F40055B864 /* icloud_poc_osx-Prefix.pch */,
+				F6FBE4C815C5A0F40055B864 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6FBE4E215C5A0F40055B864 /* icloud_poc_osxTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6FBE4E815C5A0F40055B864 /* icloud_poc_osxTests.h */,
+				F6FBE4E915C5A0F40055B864 /* icloud_poc_osxTests.m */,
+				F6FBE4E315C5A0F40055B864 /* Supporting Files */,
+			);
+			path = icloud_poc_osxTests;
+			sourceTree = "<group>";
+		};
+		F6FBE4E315C5A0F40055B864 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6FBE4E415C5A0F40055B864 /* icloud_poc_osxTests-Info.plist */,
+				F6FBE4E515C5A0F40055B864 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6FBE4B415C5A0F40055B864 /* artwallorganizerosx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6FBE4ED15C5A0F40055B864 /* Build configuration list for PBXNativeTarget "artwallorganizerosx" */;
+			buildPhases = (
+				F6FBE4B115C5A0F40055B864 /* Sources */,
+				F6FBE4B215C5A0F40055B864 /* Frameworks */,
+				F6FBE4B315C5A0F40055B864 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = artwallorganizerosx;
+			productName = icloud_poc_osx;
+			productReference = F6FBE4B515C5A0F40055B864 /* artwallorganizerosx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6FBE4DB15C5A0F40055B864 /* icloud_poc_osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6FBE4F015C5A0F40055B864 /* Build configuration list for PBXNativeTarget "icloud_poc_osxTests" */;
+			buildPhases = (
+				F6FBE4D715C5A0F40055B864 /* Sources */,
+				F6FBE4D815C5A0F40055B864 /* Frameworks */,
+				F6FBE4D915C5A0F40055B864 /* Resources */,
+				F6FBE4DA15C5A0F40055B864 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6FBE4E115C5A0F40055B864 /* PBXTargetDependency */,
+			);
+			name = icloud_poc_osxTests;
+			productName = icloud_poc_osxTests;
+			productReference = F6FBE4DC15C5A0F40055B864 /* icloud_poc_osxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6FBE4AC15C5A0F40055B864 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = awo;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "JASON CROSS";
+			};
+			buildConfigurationList = F6FBE4AF15C5A0F40055B864 /* Build configuration list for PBXProject "icloud_poc_osx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6FBE4AA15C5A0F40055B864;
+			productRefGroup = F6FBE4B615C5A0F40055B864 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6FBE4B415C5A0F40055B864 /* artwallorganizerosx */,
+				F6FBE4DB15C5A0F40055B864 /* icloud_poc_osxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6FBE4B315C5A0F40055B864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4C415C5A0F40055B864 /* InfoPlist.strings in Resources */,
+				F6FBE4CA15C5A0F40055B864 /* Credits.rtf in Resources */,
+				F6FBE4D015C5A0F40055B864 /* awoDocument.xib in Resources */,
+				F6FBE4D315C5A0F40055B864 /* MainMenu.xib in Resources */,
+				F6B2E47815C90A03002D03DB /* icloud_poc_osx.entitlements in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FBE4D915C5A0F40055B864 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4E715C5A0F40055B864 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6FBE4DA15C5A0F40055B864 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6FBE4B115C5A0F40055B864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4C615C5A0F40055B864 /* main.m in Sources */,
+				F6FBE4CD15C5A0F40055B864 /* awoDocument.m in Sources */,
+				F6FBE4D615C5A0F40055B864 /* awoDocument.xcdatamodeld in Sources */,
+				F6F5AAC115C5DC2B0012157B /* Photo.m in Sources */,
+				F6F5AAC315C5DC2B0012157B /* Sub_Photo.m in Sources */,
+				F6F5AAC715C5E9B80012157B /* awoPhotoArrayController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FBE4D715C5A0F40055B864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6FBE4EA15C5A0F40055B864 /* icloud_poc_osxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6FBE4E115C5A0F40055B864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6FBE4B415C5A0F40055B864 /* artwallorganizerosx */;
+			targetProxy = F6FBE4E015C5A0F40055B864 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6FBE4C215C5A0F40055B864 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FBE4C315C5A0F40055B864 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6FBE4C815C5A0F40055B864 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FBE4C915C5A0F40055B864 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6FBE4CE15C5A0F40055B864 /* awoDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FBE4CF15C5A0F40055B864 /* en */,
+			);
+			name = awoDocument.xib;
+			sourceTree = "<group>";
+		};
+		F6FBE4D115C5A0F40055B864 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FBE4D215C5A0F40055B864 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F6FBE4E515C5A0F40055B864 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6FBE4E615C5A0F40055B864 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6FBE4EB15C5A0F40055B864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6FBE4EC15C5A0F40055B864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6FBE4EE15C5A0F40055B864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = icloud_poc_osx/icloud_poc_osx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "icloud_poc_osx/icloud_poc_osx-Prefix.pch";
+				INFOPLIST_FILE = "icloud_poc_osx/icloud_poc_osx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6FBE4EF15C5A0F40055B864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = icloud_poc_osx/icloud_poc_osx.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "icloud_poc_osx/icloud_poc_osx-Prefix.pch";
+				INFOPLIST_FILE = "icloud_poc_osx/icloud_poc_osx-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6FBE4F115C5A0F40055B864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/icloud_poc_osx.app/Contents/MacOS/icloud_poc_osx";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "icloud_poc_osx/icloud_poc_osx-Prefix.pch";
+				INFOPLIST_FILE = "icloud_poc_osxTests/icloud_poc_osxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F6FBE4F215C5A0F40055B864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/icloud_poc_osx.app/Contents/MacOS/icloud_poc_osx";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "icloud_poc_osx/icloud_poc_osx-Prefix.pch";
+				INFOPLIST_FILE = "icloud_poc_osxTests/icloud_poc_osxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6FBE4AF15C5A0F40055B864 /* Build configuration list for PBXProject "icloud_poc_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FBE4EB15C5A0F40055B864 /* Debug */,
+				F6FBE4EC15C5A0F40055B864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6FBE4ED15C5A0F40055B864 /* Build configuration list for PBXNativeTarget "artwallorganizerosx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FBE4EE15C5A0F40055B864 /* Debug */,
+				F6FBE4EF15C5A0F40055B864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6FBE4F015C5A0F40055B864 /* Build configuration list for PBXNativeTarget "icloud_poc_osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6FBE4F115C5A0F40055B864 /* Debug */,
+				F6FBE4F215C5A0F40055B864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6FBE4D415C5A0F40055B864 /* awoDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6FBE4D515C5A0F40055B864 /* awoDocument.xcdatamodel */,
+			);
+			currentVersion = F6FBE4D515C5A0F40055B864 /* awoDocument.xcdatamodel */;
+			path = awoDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6FBE4AC15C5A0F40055B864 /* Project object */;
+}
