@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>artwallorganizer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>icloud_pocTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>F6BF770D1539CCD7005D8D92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6BF77391539CCD7005D8D92</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6D43DD015C8090A00F6B691</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6FBE47315C59D600055B864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6FBE49515C59D610055B864</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
