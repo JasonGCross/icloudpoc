@@ -6,3 +6,6 @@
 *.xcscheme
 
 *.xcbkptlist
+
+*.idea
+*.idea/

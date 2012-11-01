@@ -34,6 +34,8 @@
         controller.managedObjectContext = self.managedObjectContext;
     }
     
+    [NSFileCoordinator addFilePresenter:self];
+    
     return YES;
 }
 							
@@ -123,22 +125,16 @@
     }
     
     // Find the location of the ubiquity container on the filesystem
-    NSFileManager * fm = [NSFileManager defaultManager];
-    NSURL* ubContainer = nil;
-    ubContainer = [fm URLForUbiquityContainerIdentifier:nil];
-    NSURL * containerIdentifierURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"ca.jasoncross.artwallorganizer"];
-    NSError * err = nil;
-    NSString * containerIdentifierString = [NSString stringWithContentsOfURL:containerIdentifierURL
-                                                                    encoding:NSUTF8StringEncoding
-                                                                       error:&err];
-    ubContainer = [fm URLForUbiquityContainerIdentifier: containerIdentifierString];
+    NSFileManager * fileManager = [NSFileManager defaultManager];
+    _ubContainer = [fileManager URLForUbiquityContainerIdentifier:@"ZT7E887Q9H.ca.jasoncross.artwallorganizer"];
+    NSLog(@"iPad ubuity container: %@", _ubContainer);
     
     // construct the dictionary that tells core data
     // where the transaction log should be stored
     NSMutableDictionary * options = [NSMutableDictionary dictionary];
     [options setObject:@"artwallorganizer"
                 forKey:NSPersistentStoreUbiquitousContentNameKey];
-    [options setObject:ubContainer
+    [options setObject:_ubContainer
                 forKey:NSPersistentStoreUbiquitousContentURLKey];
     
     // this helps with core data versioning mis matches
@@ -148,22 +144,23 @@
                 forKey:NSInferMappingModelAutomaticallyOption];
     
     // specify a new directory and create it in the ubiquity container
-    NSURL *nosyncDir = [ubContainer URLByAppendingPathComponent:@"artwallorganizer.nosync"];
-    [fm createDirectoryAtURL:nosyncDir
- withIntermediateDirectories:YES
-                  attributes:nil
-                       error:nil];
+    NSURL *nosyncDir = [_ubContainer URLByAppendingPathComponent:@"artwallorganizer.nosync"];
+    [fileManager createDirectoryAtURL:nosyncDir
+          withIntermediateDirectories:YES
+                           attributes:nil
+                                error:nil];
     NSURL *storeURL = nil;
     storeURL = [nosyncDir URLByAppendingPathComponent:@"icloud_poc.sqlite"];
     //storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"icloud_poc.sqlite"];
     //[[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
     NSError *error = nil;
-    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSPersistentStore * successfulOpen = [__persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
-                                                                     configuration:nil
-                                                                               URL:storeURL
-                                                                           options:options
-                                                                             error:&error];
+    
+    NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    NSPersistentStore * successfulOpen = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
+                                                                   configuration:nil
+                                                                             URL:storeURL
+                                                                         options:options
+                                                                           error:&error];
     if (!successfulOpen) {
         /*
          Replace this implementation with code to handle the error appropriately.
@@ -190,9 +187,27 @@
          */
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
-    }    
+    }
+    __persistentStoreCoordinator = coordinator;
     
     return __persistentStoreCoordinator;
+}
+
+#pragma mark - NSFilePresenter protocol
+
+- (NSURL *) presentedItemURL {
+    if (nil == _ubContainer) {
+        NSFileManager * fileManager = [NSFileManager defaultManager];
+        _ubContainer = [fileManager URLForUbiquityContainerIdentifier:@"ZT7E887Q9H.ca.jasoncross.artwallorganizer"];
+    }
+    return _ubContainer;
+}
+
+- (NSOperationQueue *) presentedItemOperationQueue {
+    if (nil == _presentedItemOperationQueue) {
+        _presentedItemOperationQueue = [[NSOperationQueue alloc] init];
+    }
+    return _presentedItemOperationQueue;
 }
 
 
@@ -202,6 +217,10 @@
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void) dealloc {
+    [NSFileCoordinator removeFilePresenter:self];
 }
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F60C339815D348BB00E20E93 /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = F60C339715D348BB00E20E93 /* icon-72.png */; };
+		F60C339A15D3491900E20E93 /* icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = F60C339915D3491900E20E93 /* icon-144.png */; };
+		F60C339C15D3494C00E20E93 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F60C339B15D3494C00E20E93 /* icon@2x.png */; };
+		F60C339E15D3495500E20E93 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F60C339D15D3495500E20E93 /* icon.png */; };
 		F6BF773C1539CCD7005D8D92 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF773B1539CCD7005D8D92 /* SenTestingKit.framework */; };
 		F6BF773D1539CCD8005D8D92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF77121539CCD7005D8D92 /* UIKit.framework */; };
 		F6BF773E1539CCD8005D8D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6BF77141539CCD7005D8D92 /* Foundation.framework */; };
@@ -30,6 +34,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F60C339715D348BB00E20E93 /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		F60C339915D3491900E20E93 /* icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-144.png"; sourceTree = "<group>"; };
+		F60C339B15D3494C00E20E93 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		F60C339D15D3495500E20E93 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		F6BF77121539CCD7005D8D92 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6BF77141539CCD7005D8D92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6BF77161539CCD7005D8D92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -107,6 +115,10 @@
 		F6BF77031539CCD7005D8D92 = {
 			isa = PBXGroup;
 			children = (
+				F60C339D15D3495500E20E93 /* icon.png */,
+				F60C339B15D3494C00E20E93 /* icon@2x.png */,
+				F60C339915D3491900E20E93 /* icon-144.png */,
+				F60C339715D348BB00E20E93 /* icon-72.png */,
 				F6F5AAB715C5DBE30012157B /* shared */,
 				F6BF771A1539CCD7005D8D92 /* icloud_poc */,
 				F6BF77421539CCD8005D8D92 /* icloud_pocTests */,
@@ -143,6 +155,7 @@
 		F6BF771A1539CCD7005D8D92 /* icloud_poc */ = {
 			isa = PBXGroup;
 			children = (
+				F6BF772C1539CCD7005D8D92 /* icloud_poc.xcdatamodeld */,
 				F6BF77231539CCD7005D8D92 /* awoAppDelegate.h */,
 				F6BF77241539CCD7005D8D92 /* awoAppDelegate.m */,
 				F6BF77261539CCD7005D8D92 /* MainStoryboard_iPhone.storyboard */,
@@ -190,9 +203,8 @@
 		F6F5AAB715C5DBE30012157B /* shared */ = {
 			isa = PBXGroup;
 			children = (
-				F6BF775A1539D58F005D8D92 /* Photo.m */,
-				F6BF772C1539CCD7005D8D92 /* icloud_poc.xcdatamodeld */,
 				F6BF77591539D58F005D8D92 /* Photo.h */,
+				F6BF775A1539D58F005D8D92 /* Photo.m */,
 				F6BF77561539D508005D8D92 /* Sub_Photo.h */,
 				F6BF77571539D508005D8D92 /* Sub_Photo.m */,
 			);
@@ -333,6 +345,10 @@
 				F6D43DE115C8090A00F6B691 /* InfoPlist.strings in Resources */,
 				F6D43DE215C8090A00F6B691 /* MainStoryboard_iPhone.storyboard in Resources */,
 				F6D43DE315C8090A00F6B691 /* MainStoryboard_iPad.storyboard in Resources */,
+				F60C339815D348BB00E20E93 /* icon-72.png in Resources */,
+				F60C339A15D3491900E20E93 /* icon-144.png in Resources */,
+				F60C339C15D3494C00E20E93 /* icon@2x.png in Resources */,
+				F60C339E15D3495500E20E93 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,8 +617,7 @@
 				F6BF772D1539CCD7005D8D92 /* icloud_poc.xcdatamodel */,
 			);
 			currentVersion = F6BF772D1539CCD7005D8D92 /* icloud_poc.xcdatamodel */;
-			name = icloud_poc.xcdatamodeld;
-			path = icloud_poc/icloud_poc.xcdatamodeld;
+			path = icloud_poc.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -8,7 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface awoAppDelegate : NSObject <NSApplicationDelegate>
+@interface awoAppDelegate : NSObject <NSApplicationDelegate, NSFilePresenter> {
+    NSURL* _ubContainer;
+    NSOperationQueue * _presentedItemOperationQueue;
+}
 
 
 @property (assign) IBOutlet NSWindow *window;

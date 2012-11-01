@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface awoAppDelegate : UIResponder <UIApplicationDelegate>
+@interface awoAppDelegate : UIResponder <UIApplicationDelegate, NSFilePresenter> {
+    NSURL* _ubContainer;
+    NSOperationQueue * _presentedItemOperationQueue;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

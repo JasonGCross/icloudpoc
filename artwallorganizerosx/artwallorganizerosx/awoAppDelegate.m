@@ -15,6 +15,7 @@
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize photos = _photos;
 
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
@@ -22,7 +23,8 @@
 
 }
 
-// Returns the directory the application uses to store the Core Data store file. This code uses a directory named "ca.jasoncross.artwallorganizerosx" in the user's Application Support directory.
+// Returns the directory the application uses to store the Core Data store file.
+// This code uses a directory named "ca.jasoncross.artwallorganizerosx" in the user's Application Support directory.
 - (NSURL *)applicationFilesDirectory
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -57,19 +59,17 @@
         return nil;
     }
     
-    NSFileManager *fileManager = [NSFileManager defaultManager];
-    
     // Find the location of the ubiquity container on the filesystem
-    NSURL* ubContainer = nil;
-    ubContainer = [fileManager URLForUbiquityContainerIdentifier:nil];
-    NSError *error = nil;
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    _ubContainer = [fileManager URLForUbiquityContainerIdentifier:@"ZT7E887Q9H.ca.jasoncross.artwallorganizer"];
+    NSLog(@"Laptop ubuity container: %@", _ubContainer);
     
     // construct the dictionary that tells core data
     // where the transaction log should be stored
     NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
     [options setObject:@"artwallorganizer"
                 forKey:NSPersistentStoreUbiquitousContentNameKey];
-    [options setObject:ubContainer
+    [options setObject:_ubContainer
                 forKey:NSPersistentStoreUbiquitousContentURLKey];
     
     // this helps with core data versioning mis matches
@@ -79,7 +79,7 @@
                 forKey:NSInferMappingModelAutomaticallyOption];
     
     // specify a new directory and create it in the ubiquity container
-    NSURL *nosyncDir = [ubContainer URLByAppendingPathComponent:@"artwallorganizer.nosync"];
+    NSURL *nosyncDir = [_ubContainer URLByAppendingPathComponent:@"artwallorganizer.nosync"];
     [fileManager createDirectoryAtURL:nosyncDir
           withIntermediateDirectories:YES
                            attributes:nil
@@ -87,7 +87,6 @@
 
     NSURL *storeURL = nil;
     storeURL = [nosyncDir URLByAppendingPathComponent:@"icloud_poc.sqlite"];
-
     /*
     NSURL *applicationFilesDirectory = [self applicationFilesDirectory];
     NSDictionary *properties = [applicationFilesDirectory resourceValuesForKeys:@[NSURLIsDirectoryKey]
@@ -124,13 +123,14 @@
     
     NSURL *url = [applicationFilesDirectory URLByAppendingPathComponent:@"artwallorganizerosx.storedata"];
      */
+    //[[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+    NSError *error = nil;
     
     NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:mom];
-    error = nil;
-    NSPersistentStore * successfulOpen = [coordinator addPersistentStoreWithType:NSXMLStoreType
+    NSPersistentStore * successfulOpen = [coordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                                    configuration:nil
                                                                              URL:storeURL
-                                                                         options:nil
+                                                                         options:options
                                                                            error:&error];
     if(!successfulOpen) {
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -164,6 +164,26 @@
 
     return _managedObjectContext;
 }
+
+#pragma mark - NSFilePresenter protocol
+
+- (NSURL *) presentedItemURL {
+    if (nil == _ubContainer) {
+        NSFileManager * fileManager = [NSFileManager defaultManager];
+        _ubContainer = [fileManager URLForUbiquityContainerIdentifier:@"ZT7E887Q9H.ca.jasoncross.artwallorganizer"];
+    }
+    return _ubContainer;
+}
+
+- (NSOperationQueue *) presentedItemOperationQueue {
+    if (nil == _presentedItemOperationQueue) {
+        _presentedItemOperationQueue = [[NSOperationQueue alloc] init];
+    }
+    return _presentedItemOperationQueue;
+}
+
+
+#pragma mark -
 
 // Returns the NSUndoManager for the application. In this case, the manager returned is
 // that of the managed object context for the application.
@@ -266,12 +286,28 @@
 
 - (void)saveContext
 {
-    NSError *error = nil;
+    __block NSError *error = nil;
+    static BOOL filePresenterAdded = NO;
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
     if (managedObjectContext != nil) {
         if ([managedObjectContext hasChanges]) {
-            BOOL saveSuccessful = [managedObjectContext save:&error];
-            if (saveSuccessful == NO) {
+            NSFileCoordinator * fileCoordinator = [[NSFileCoordinator alloc] initWithFilePresenter:self];
+            __block BOOL saveSuccessful = NO;
+            [fileCoordinator coordinateWritingItemAtURL:_ubContainer
+                                                options:NSFileCoordinatorWritingForMerging
+                                                  error:&error
+                                             byAccessor:^(NSURL *newURL) {
+                                                 if (filePresenterAdded == NO) {
+                                                     [NSFileCoordinator addFilePresenter:self];
+                                                     NSArray * presenters = [NSFileCoordinator filePresenters];
+                                                     NSLog(@"file presenters: %@", presenters);
+                                                     filePresenterAdded = YES;
+                                                 }
+                                                 saveSuccessful = [managedObjectContext save:&error];
+                                             }];
+            
+            
+                if (saveSuccessful == NO) {
                 // Replace this implementation with code to handle the error appropriately.
                 // abort() causes the application to generate a crash log and terminate.
                 // You should not use this function in a shipping application, although it may be useful during development.
@@ -296,5 +332,6 @@
     [self.photos removeObject:object];
     [self saveContext];
 }
+
 
 @end
